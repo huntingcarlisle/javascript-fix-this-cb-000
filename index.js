@@ -44,7 +44,7 @@ function bake(updateFunction) {
   setTimeout(() => {
     cool.call(this, updateFunction)
   }, 2000)
-  updateFunction
+  updateFunction(status);
 }
 
 function mix(updateFunction) {
