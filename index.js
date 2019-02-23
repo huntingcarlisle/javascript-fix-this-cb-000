@@ -31,7 +31,7 @@ function makeCake() {
 
 function makePie() {
   var updatePieStatus = updateStatus.bind(this);
-  
+  pie.decorate = cake.
   mix.call(pie, updatePieStatus)
 }
 
