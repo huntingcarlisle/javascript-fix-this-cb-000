@@ -25,13 +25,13 @@ var pie = {
 }
 
 function makeCake() {
-  var element = this.getElementsByClassName("cake").innerHTML;
+  var element = this.getElementById("cake").innerHTML;
   var updateCakeStatus = updateStatus(element);
   mix(updateCakeStatus)
 }
 
 function makePie() {
-  var element = this.getElementsByClassName("pie").innerHTML;
+  var element = this.getElementById("pie").innerHTML;
   var updatePieStatus = updateStatus(element);
   mix(updatePieStatus)
 }
