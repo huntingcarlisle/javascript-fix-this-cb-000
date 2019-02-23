@@ -31,7 +31,7 @@ function makeCake() {
 }
 
 function makePie() {
-  var element = this.getElementsByClassName("pie");
+  var element = this.getElementsByClassName("pie").innerHTML;
   var updatePieStatus = updateStatus(element);
   mix(updatePieStatus)
 }
