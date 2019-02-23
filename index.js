@@ -66,10 +66,11 @@ function cool(updateFunction) {
 function makeDessert() {
   //add code here to decide which make... function to call
   //based on which link was clicked
-  if (this.innerText == "Make Pie") {
-    makePie.call(this.parentNode)
-  } else {
+  var dessert = this.parentNode.id
+  if (dessert === "cake") {
     makeCake.call(this.parentNode)
+  } else if (dessert === "pie") {
+    makePie.call(this.parentNode)
   }
 }
 
